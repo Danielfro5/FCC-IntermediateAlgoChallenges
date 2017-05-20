@@ -1,14 +1,12 @@
+function smallestCommons(arr) {
 
-function sumAll(arr) {
-  var highestNumber = Math.max.apply(null, arr);
-  var lowestNumber = Math.min.apply(null, arr);
-  var sumVar = 0;
-
-  for(sum=lowestNumber;sum<highestNumber+1;sum++){
-   sumVar = sumVar + sum;
-
+  var sumVar = [];
+  for(i=Math.min.apply(null, arr);i<Math.max.apply(null, arr)+1;i++){
+   sumVar.push(i);
   }
+
  return sumVar;
 }
 
-sumAll([1, 4]);
+
+smallestCommons([3,9]);
